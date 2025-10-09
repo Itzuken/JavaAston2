@@ -21,7 +21,12 @@ public class User {
     public User(String name, String email, int age, LocalDateTime date){
         this.name = name; this.email = email; this.age = age; this.date = date;
     }
-
+    public int getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
