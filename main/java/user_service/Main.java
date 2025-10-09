@@ -24,7 +24,7 @@ public class Main {
 
         /* код БД
         create table users(
-        Id serial primary key,
+        ID serial primary key,
         name varchar not null,
         email varchar not null,
         age int not null,

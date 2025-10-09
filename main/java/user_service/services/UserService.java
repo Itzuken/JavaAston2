@@ -10,12 +10,21 @@ public class UserService {
         return userDao.read(id);
     }
     public void saveUser(User user){
+        if(user == null){
+            throw new NullPointerException("Not null");
+        }
         userDao.save(user);
     }
     public void updateUser(User user){
+        if(user == null){
+            throw new NullPointerException("Not null");
+        }
         userDao.update(user);
     }
     public void deleteUser(User user){
+        if(user == null){
+            throw new NullPointerException("Not null");
+        }
         userDao.delete(user);
     }
 }
